@@ -1,0 +1,32 @@
+:root {
+    --fs-md: 36px;
+    --fs-sm: 18px;
+
+    --fw-md: 700;
+    --fw-sm: 400;
+
+    --text-lightblue: #1A9FFF;
+    --text-grey:#636363;
+
+}
+.fs_md{
+    font-size: var(--fs-md);
+}
+.fs_sm{
+    font-size: var(--fs-sm);
+}
+.fw_md{
+    font-weight: var(--fw-md);
+}
+.fw_sm{
+    font-weight: var(--fw-sm);
+}
+.text_lightblue{
+    color:var(--text-lightblue);
+}
+.text_grey{
+    color:var(--text-grey);
+}
+@media(min-width:992px){
+    
+}
