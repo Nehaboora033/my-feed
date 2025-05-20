@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./assets/css/root.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,15 +24,15 @@
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center gap-3">
-                        <div class="  d-flex align-items-center gap-lg-0 gap-3">
+                        <div class="  d-flex align-items-center gap-lg-0 gap-md-3 gap-1">
                             <button class="menu-icon d-lg-none" onclick="menuIcon()">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </button>
                             <div class="d-flex  align-items-center">
-                                <img src="./assets/images/svg/logo.svg" alt="logo">
-                                <a href="" class="fw_lg fs_lg font-family line-height-100 text-dark ms-4">NFTsee</a>
+                                <img src="./assets/images/svg/logo.svg" alt="logo" class="logo-icon">
+                                <a href="" class="fw_lg fs_lg font-family line-height-100 text-dark ms-lg-4 ms-1">NFTsee</a>
                             </div>
                         </div>
                         <div class="d-flex gap-4 align-items-center menu-list activeNavBar ">
@@ -34,11 +40,11 @@
                             <p class="font-family fw_sm fs_md line-height-100 text_grey ml-59 m-0">Wallet</p>
                         </div>
                     </div>
-                    <div class="d-flex gap-4 align-items-center">
+                    <div class="d-flex gap-sm-4 gap-1 align-items-center">
                         <input type="text" placeholder="Search here..." class="input d-md-block d-none">
                         <img src="./assets/images/svg/search.svg" alt="search" class="d-md-none d-block">
-                        <img src="./assets/images/svg/theme-mode.svg" alt="theme-mode">
-                        <img src="./assets/images/svg/nav-profile.svg" alt="profile" class="cursor nav-profile">
+                        <img src="./assets/images/svg/theme-mode.svg" alt="theme-mode" class="theme">
+                        <img src="./assets/images/svg/nav-profile.svg" alt="profile" class="cursor profile-svg">
                     </div>
                 </div>
 
@@ -47,29 +53,96 @@
     </section>
     <section class="main-section">
         <div class="container">
-            <div class="d-flex flex-lg-row flex-column-reverse">
-                <div class="card1 mt-50">
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex align-items-center gap-lg-3">
-                            <img src="./assets/images/svg/profile1.svg" alt="profile1" class="cursor">
-                            <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
+            <div class="row  m-0  flex-lg-row flex-column-reverse">
+                <div class="col-12 col-lg-9">
+                    <div class="card1 mt-50">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./assets/images/svg/profile1.svg" alt="profile1" class="cursor">
+                                <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
+                            </div>
+                            <img src="./assets/images/svg/more-option.svg" alt="more-options">
                         </div>
-                        <img src="./assets/images/svg/more-option.svg" alt="more-options">
-                    </div>
-                    <img src="./assets/images/png/img1.png" alt="image1" class="w-100 mt-44">
-                    <div class="mt-4">
-                        <img src="./assets/images/svg/like.svg" alt="like" class="">
-                        <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
-                    </div>
+                        <img src="./assets/images/png/img1.png" alt="image1" class="w-100 mt-44">
+                        <div class="mt-4">
+                            <img src="./assets/images/svg/like.svg" alt="like" class="">
+                            <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
+                        </div>
 
-                    <div class="outer d-flex align-items-center justify-content-between mt-44">
-                        <input type="text" placeholder="Add a comment..." class="inside-input">
-                        <button class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
-                    </div>
+                        <div class="outer d-flex align-items-center justify-content-between mt-44">
+                            <input type="text" placeholder="Add a comment..." class="inside-input">
+                            <button
+                                class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
+                        </div>
 
+                    </div>
+                    <div class="card1 mt-50 ">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./assets/images/svg/profile2.svg" alt="profile2" class="cursor">
+                                <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
+                            </div>
+                            <img src="./assets/images/svg/more-option.svg" alt="more-options">
+                        </div>
+                        <div class="bg-color w-100 d-flex justify-content-center mt-44">
+                            <img src="assets/images/png/img2.png" alt="image2" class="w-100 max-w-476">
+                        </div>
+                        <div class="mt-4">
+                            <img src="./assets/images/svg/like.svg" alt="like">
+                            <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
+                        </div>
+                        <div class="outer d-flex align-items-center justify-content-between mt-44">
+                            <input type="text" placeholder="Add a comment..." class="inside-input">
+                            <button
+                                class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
+
+                        </div>
+                    </div>
+                    <div class="card1 mt-50 ">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./assets/images/svg/profile3.svg" alt="profile3" class="cursor">
+                                <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
+                            </div>
+                            <img src="./assets/images/svg/more-option.svg" alt="more-options">
+                        </div>
+                        <img src="./assets/images/png/img3.png" alt="image3" class="w-100 mt-44">
+                        <div class="mt-4">
+                            <img src="./assets/images/svg/like.svg" alt="like">
+                            <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
+                        </div>
+                        <div class="outer d-flex align-items-center justify-content-between mt-44">
+                            <input type="text" placeholder="Add a comment..." class="inside-input">
+                            <button
+                                class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
+
+                        </div>
+                    </div>
+                    <div class="card1 mt-50">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./assets/images/svg/profile3.svg" alt="profile3" class="cursor">
+                                <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
+                            </div>
+                            <img src="./assets/images/svg/more-option.svg" alt="more-options">
+                        </div>
+                        <div class="bg-color w-100 d-flex justify-content-center mt-44">
+                            <img src="assets/images/png/img4.png" alt="image4" class="w-100 max-w-476">
+                        </div>
+                        <div class="mt-4">
+                            <img src="./assets/images/svg/like.svg" alt="like">
+                            <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
+                        </div>
+                        <div class="outer d-flex align-items-center justify-content-between mt-44">
+                            <input type="text" placeholder="Add a comment..." class="inside-input">
+                            <button
+                                class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="ml-40 mt-50 w-100 max-w-330">
-                    <div>
+                <div class="col-12 col-lg-3">
+                    <div class="mt-50">
                         <p class=" font-family line-height-100 fw_sm fs_sm text_grey mb-21">Filters</p>
                         <div class="d-lg-block d-none">
                             <div class="form-check">
@@ -86,134 +159,81 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="d-lg-none d-flex gap-2">
-                            <button class="fw_md fs_sm line-height-100 font-family text-light bg-black filter-button">Most Liked</button>
-                            <button class="fw_md fs_sm line-height-100 font-family filter-button received">Recently Received</button>
+                        <div class="d-lg-none d-flex gap-2 ">
+                            <button
+                                class="fw_md fs_sm line-height-100 font-family text-light bg-black filter-button">Most
+                                Liked</button>
+                            <button class="fw_md fs_sm line-height-100 font-family filter-button received">Recently
+                                Received</button>
                         </div>
 
                     </div>
-
                     <div class="mt-39">
                         <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0">Suggestions for you</p>
-                        <div>
-                            <div class="d-flex align-items-center justify-content-between mt-3 ">
-                                <div class="d-flex align-items-center gap-3">
+                        <div class="slidebox">
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 flex-column flex-lg-row card2">
+                                <div class="d-flex align-items-center gap-3 flex-column flex-lg-row">
                                     <img src="./assets/images/svg/side-profile1.svg" alt="profile1" class="cursor">
                                     <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
                                 </div>
                                 <button
-                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow mt-2 m-lg-0">Follow</button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-between mt-3">
-                                <div class="d-flex align-items-center gap-3">
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 flex-column flex-lg-row card2">
+                                <div class="d-flex align-items-center gap-3 flex-column flex-lg-row">
                                     <img src="./assets/images/svg/side-profile2.svg" alt="profile2" class="cursor">
                                     <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
                                 </div>
                                 <button
-                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow mt-2 m-lg-0">Follow</button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-between mt-3">
-                                <div class="d-flex align-items-center gap-3">
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 flex-column flex-lg-row card2">
+                                <div class="d-flex align-items-center gap-3 flex-column flex-lg-row">
                                     <img src="./assets/images/svg/side-profile3.svg" alt="profile3" class="cursor">
                                     <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
                                 </div>
                                 <button
-                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow mt-2 m-lg-0">Follow</button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-between mt-3">
-                                <div class="d-flex align-items-center gap-3">
-                                    <img src="./assets/images/svg/side-profile4.svg" alt="profile4" class="cursor">
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 flex-column flex-lg-row card2">
+                                <div class="d-flex align-items-center gap-3 flex-column flex-lg-row">
+                                    <img src="./assets/images/svg/side-profile3.svg" alt="profile3" class="cursor">
                                     <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
                                 </div>
                                 <button
-                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow mt-2 m-lg-0">Follow</button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-between mt-3">
-                                <div class="d-flex align-items-center gap-3">
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 flex-column flex-lg-row card2">
+                                <div class="d-flex align-items-center gap-3 flex-column flex-lg-row">
                                     <img src="./assets/images/svg/side-profile5.svg" alt="profile5" class="cursor">
                                     <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
                                 </div>
                                 <button
-                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow mt-2 m-lg-0">Follow</button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-between mt-3">
-                                <div class="d-flex align-items-center gap-3">
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 flex-column flex-lg-row card2">
+                                <div class="d-flex align-items-center gap-3 flex-column flex-lg-row">
                                     <img src="./assets/images/svg/side-profile6.svg" alt="profile6" class="cursor">
                                     <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
                                 </div>
                                 <button
-                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow mt-2 m-lg-0">Follow</button>
                             </div>
                         </div>
-                        <div class=" text_grey font-family line-height-100 fw_sm fs_md mt-44 d-lg-block d-none">Copyright@2021</div>
+                        <div class=" text_grey font-family line-height-100 fw_sm fs_md mt-44 d-lg-block d-none">
+                            Copyright@2021</div>
                     </div>
-                </div>
-            </div>
-            <div class="card1 mt-50 max-w-926">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex align-items-center gap-lg-3">
-                        <img src="./assets/images/svg/profile2.svg" alt="profile2" class="cursor">
-                        <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
-                    </div>
-                    <img src="./assets/images/svg/more-option.svg" alt="more-options">
-                </div>
-                <div class="bg-color w-100 d-flex justify-content-center mt-44">
-                    <img src="assets/images/png/img2.png" alt="image2">
-                </div>
-                <div class="mt-4">
-                    <img src="./assets/images/svg/like.svg" alt="like">
-                    <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
-                </div>
-                <div class="outer d-flex align-items-center justify-content-between mt-44">
-                    <input type="text" placeholder="Add a comment..." class="inside-input">
-                    <button class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
-
-                </div>
-            </div>
-            <div class="card1 mt-50 max-w-926">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex align-items-center gap-lg-3">
-                        <img src="./assets/images/svg/profile3.svg" alt="profile3" class="cursor">
-                        <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
-                    </div>
-                    <img src="./assets/images/svg/more-option.svg" alt="more-options">
-                </div>
-                <img src="./assets/images/png/img3.png" alt="image3" class="w-100 mt-44">
-                <div class="mt-4">
-                    <img src="./assets/images/svg/like.svg" alt="like">
-                    <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
-                </div>
-                <div class="outer d-flex align-items-center justify-content-between mt-44">
-                    <input type="text" placeholder="Add a comment..." class="inside-input">
-                    <button class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
-
-                </div>
-            </div>
-            <div class="card1 mt-50 max-w-926">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex align-items-center gap-lg-3">
-                        <img src="./assets/images/svg/profile3.svg" alt="profile3" class="cursor">
-                        <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
-                    </div>
-                    <img src="./assets/images/svg/more-option.svg" alt="more-options">
-                </div>
-                <div class="bg-color w-100 d-flex justify-content-center mt-44">
-                    <img src="assets/images/png/img4.png" alt="image4">
-                </div>
-                <div class="mt-4">
-                    <img src="./assets/images/svg/like.svg" alt="like">
-                    <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
-                </div>
-                <div class="outer d-flex align-items-center justify-content-between mt-44">
-                    <input type="text" placeholder="Add a comment..." class="inside-input">
-                    <button class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
 
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <script>
         function menuIcon() {
@@ -221,9 +241,21 @@
             document.querySelector('nav').classList.toggle('activeNavBar');
         }
     </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

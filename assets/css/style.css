@@ -95,6 +95,31 @@ nav {
     padding-bottom: 96px;
 }
 
+.card2 {
+    padding: 14px 28px;
+    border: 1px solid #00000033;
+}
+
+.text-wrap {
+    text-wrap: nowrap;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.profile-svg {
+    width: 50px;
+    height: 50px;
+}
+.theme{
+    width:30px ;
+   
+}
+
+
+
 /* margin property */
 .ml-59 {
     margin-left: 59px;
@@ -113,10 +138,6 @@ nav {
     margin-top: 39px !important;
 }
 
-.ml-40 {
-    margin-left: 40px;
-}
-
 .mb-21 {
     margin-bottom: 21px !important;
 }
@@ -127,12 +148,12 @@ nav {
     max-width: 160px;
 }
 
-.max-w-330 {
-    max-width: 330px;
-}
-
 .max-w-926 {
     max-width: 926px;
+}
+
+.max-w-476 {
+    max-width: 476px;
 }
 
 @media(min-width:768px) {
@@ -142,12 +163,43 @@ nav {
         font-weight: bold;
     }
 
+    .profile-svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .theme{
+        width: 35px;
+    }
+
+}
+
+@media(min-width:992px) {
+    .card2 {
+        padding: 0;
+        border: 0;
+    }
+
+    .logo-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-svg {
+        width: 57px;
+        height: 57px;
+
+    }
 }
 
 
 @media(max-width:992px) {
     .menu-icon {
-        width: 45px;
+        width: 40px;
         height: 30px;
         border: none;
         cursor: pointer;
@@ -195,7 +247,7 @@ nav {
         width: 50%;
     }
 
-    .activeNavBar .menu-icon span:first-child {
+    /* .activeNavBar .menu-icon span:first-child {
         transform: rotate(53deg);
         transform-origin: left;
         width: 100%;
@@ -209,7 +261,7 @@ nav {
     .activeNavBar .menu-icon span:last-child {
         transform: rotate(-49deg);
         transform-origin: left;
-        width: 100%;
+        width: 100%; */
     }
 
     .activeNavBar .menu-icon {

@@ -1,5 +1,5 @@
 :root {
-    --fs-lg: 32px;
+    --fs-lg: 22px;
     --fs-md: 16px;
     --fs-sm: 12px;
 
@@ -45,7 +45,8 @@
     color: var(--text-grey);
 }
 
-@media(min-width:992px) {
+
+@media(min-width:768px) {
     :root {
         --fs-lg: 36px;
         --fs-md: 18px;
