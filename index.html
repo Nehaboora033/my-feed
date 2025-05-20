@@ -13,42 +13,214 @@
 
 <body>
 
-    <section class="main-section">
+    <section class="nav-section">
         <nav>
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-4">
-                        <div class="d-flex  align-items-center">
-                            <img src="./assets/images/svg/logo.svg" alt="logo">
-                            <a href="" class="fw_md fs_lg font-family line-height-100 text-dark ms-4">NFTsee</a>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="  d-flex align-items-center gap-lg-0 gap-3">
+                            <button class="menu-icon d-lg-none" onclick="menuIcon()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="d-flex  align-items-center">
+                                <img src="./assets/images/svg/logo.svg" alt="logo">
+                                <a href="" class="fw_lg fs_lg font-family line-height-100 text-dark ms-4">NFTsee</a>
+                            </div>
                         </div>
-                        <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex gap-4 align-items-center menu-list activeNavBar ">
                             <p class="font-family fw_sm fs_md line-height-100 text_grey m-0 ">Feed</p>
                             <p class="font-family fw_sm fs_md line-height-100 text_grey ml-59 m-0">Wallet</p>
                         </div>
                     </div>
                     <div class="d-flex gap-4 align-items-center">
-                        <input type="text" placeholder="Search here..." class="input">
+                        <input type="text" placeholder="Search here..." class="input d-md-block d-none">
+                        <img src="./assets/images/svg/search.svg" alt="search" class="d-md-none d-block">
                         <img src="./assets/images/svg/theme-mode.svg" alt="theme-mode">
-                        <img src="./assets/images/svg/nav-profile.svg" alt="nav-profile">
+                        <img src="./assets/images/svg/nav-profile.svg" alt="profile" class="cursor nav-profile">
                     </div>
                 </div>
 
             </div>
         </nav>
-
+    </section>
+    <section class="main-section">
         <div class="container">
-            <div>
+            <div class="d-flex flex-lg-row flex-column-reverse">
+                <div class="card1 mt-50">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center gap-lg-3">
+                            <img src="./assets/images/svg/profile1.svg" alt="profile1" class="cursor">
+                            <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
+                        </div>
+                        <img src="./assets/images/svg/more-option.svg" alt="more-options">
+                    </div>
+                    <img src="./assets/images/png/img1.png" alt="image1" class="w-100 mt-44">
+                    <div class="mt-4">
+                        <img src="./assets/images/svg/like.svg" alt="like" class="">
+                        <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
+                    </div>
 
+                    <div class="outer d-flex align-items-center justify-content-between mt-44">
+                        <input type="text" placeholder="Add a comment..." class="inside-input">
+                        <button class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
+                    </div>
+
+                </div>
+                <div class="ml-40 mt-50 w-100 max-w-330">
+                    <div>
+                        <p class=" font-family line-height-100 fw_sm fs_sm text_grey mb-21">Filters</p>
+                        <div class="d-lg-block d-none">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                <label class="fw_sm fs_md text_grey" for="radioDefault1">
+                                    Most Liked
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2"
+                                    checked>
+                                <label class="fw_sm fs_md text_grey" for="radioDefault2">
+                                    Recently Received
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-lg-none d-flex gap-2">
+                            <button class="fw_md fs_sm line-height-100 font-family text-light bg-black filter-button">Most Liked</button>
+                            <button class="fw_md fs_sm line-height-100 font-family filter-button received">Recently Received</button>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-39">
+                        <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0">Suggestions for you</p>
+                        <div>
+                            <div class="d-flex align-items-center justify-content-between mt-3 ">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/svg/side-profile1.svg" alt="profile1" class="cursor">
+                                    <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
+                                </div>
+                                <button
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/svg/side-profile2.svg" alt="profile2" class="cursor">
+                                    <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
+                                </div>
+                                <button
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/svg/side-profile3.svg" alt="profile3" class="cursor">
+                                    <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
+                                </div>
+                                <button
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/svg/side-profile4.svg" alt="profile4" class="cursor">
+                                    <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
+                                </div>
+                                <button
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/svg/side-profile5.svg" alt="profile5" class="cursor">
+                                    <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
+                                </div>
+                                <button
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/svg/side-profile6.svg" alt="profile6" class="cursor">
+                                    <p class="font-family line-height-100 fw_sm fs_sm text_grey m-0 ">Jhone doe</p>
+                                </div>
+                                <button
+                                    class="font-family line-height-100 fw_sm fs_sm text_lightblue follow">Follow</button>
+                            </div>
+                        </div>
+                        <div class=" text_grey font-family line-height-100 fw_sm fs_md mt-44 d-lg-block d-none">Copyright@2021</div>
+                    </div>
+                </div>
             </div>
+            <div class="card1 mt-50 max-w-926">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center gap-lg-3">
+                        <img src="./assets/images/svg/profile2.svg" alt="profile2" class="cursor">
+                        <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
+                    </div>
+                    <img src="./assets/images/svg/more-option.svg" alt="more-options">
+                </div>
+                <div class="bg-color w-100 d-flex justify-content-center mt-44">
+                    <img src="assets/images/png/img2.png" alt="image2">
+                </div>
+                <div class="mt-4">
+                    <img src="./assets/images/svg/like.svg" alt="like">
+                    <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
+                </div>
+                <div class="outer d-flex align-items-center justify-content-between mt-44">
+                    <input type="text" placeholder="Add a comment..." class="inside-input">
+                    <button class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
 
+                </div>
+            </div>
+            <div class="card1 mt-50 max-w-926">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center gap-lg-3">
+                        <img src="./assets/images/svg/profile3.svg" alt="profile3" class="cursor">
+                        <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
+                    </div>
+                    <img src="./assets/images/svg/more-option.svg" alt="more-options">
+                </div>
+                <img src="./assets/images/png/img3.png" alt="image3" class="w-100 mt-44">
+                <div class="mt-4">
+                    <img src="./assets/images/svg/like.svg" alt="like">
+                    <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
+                </div>
+                <div class="outer d-flex align-items-center justify-content-between mt-44">
+                    <input type="text" placeholder="Add a comment..." class="inside-input">
+                    <button class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
 
+                </div>
+            </div>
+            <div class="card1 mt-50 max-w-926">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center gap-lg-3">
+                        <img src="./assets/images/svg/profile3.svg" alt="profile3" class="cursor">
+                        <p class="m-0 font-family line-height-100 fw_sm fs_sm  text_grey">Jhone doe</p>
+                    </div>
+                    <img src="./assets/images/svg/more-option.svg" alt="more-options">
+                </div>
+                <div class="bg-color w-100 d-flex justify-content-center mt-44">
+                    <img src="assets/images/png/img4.png" alt="image4">
+                </div>
+                <div class="mt-4">
+                    <img src="./assets/images/svg/like.svg" alt="like">
+                    <img src="./assets/images/svg/comment.svg" alt="comment" class="ms-4">
+                </div>
+                <div class="outer d-flex align-items-center justify-content-between mt-44">
+                    <input type="text" placeholder="Add a comment..." class="inside-input">
+                    <button class="post-button font-family line-height-100 fw_sm fs_sm text_lightblue">Post</button>
+
+                </div>
+            </div>
         </div>
-
-
     </section>
 
 
+
+    <script>
+        function menuIcon() {
+            document.querySelector('.menu-list').classList.toggle('show')
+            document.querySelector('nav').classList.toggle('activeNavBar');
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
