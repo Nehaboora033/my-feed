@@ -194,6 +194,11 @@ nav {
         height: 57px;
 
     }
+    .sticky{
+        position: sticky;
+        top: 50px;
+        height: 100vh;
+    }
 }
 
 
@@ -261,8 +266,8 @@ nav {
     .activeNavBar .menu-icon span:last-child {
         transform: rotate(-49deg);
         transform-origin: left;
-        width: 100%; */
-    }
+        width: 100%; 
+    }  */
 
     .activeNavBar .menu-icon {
         height: 34px;
