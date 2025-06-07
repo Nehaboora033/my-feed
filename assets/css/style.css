@@ -194,10 +194,11 @@ nav {
         height: 57px;
 
     }
-    .sticky{
-        position: sticky;
-        top: 50px;
+    .fixed{
+        position: fixed;
+        top: 90px;
         height: 100vh;
+        right:40px
     }
 }
 
